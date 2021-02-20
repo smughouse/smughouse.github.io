@@ -48,6 +48,9 @@
   </head>
   <body class="m-auto h-screen flex flex-col bg-yellow-50 sm:max-w-md">
     <div class="w-full bg-yellow-50 p-4">
+
+        <h1 class="text-5xl py-8">Smughouse</h1>
+        <p class="py-8">The first rule of smughouse is you must constantly talk about smughouse</p>
       <header class="w-full flex justify-between">
         <div class="flex items-center text-lg">
           <span class="w-6 h-6 mr-1">
@@ -55,7 +58,7 @@
 
             <img src="./assets/downArrow.svg" alt="" />
           </span>
-          All Rooms
+       Coming soon...
         </div>
         <div class="flex items-center">
           <div class="w-7 h-7 mr-9">
@@ -68,43 +71,97 @@
           />
         </div>
       </header>
-    </div>
+
 
     <main class="bg-white rounded-t-3xl w-full shadow px-6 py-4">
-      <h1 class="mb-4">🔴 &nbsp;Blah Blah Blah</h1>
-      <div class="grid gap-4 grid-cols-3" id="avatars"></div>
+      <h1 class="mb-4">Get an invite:</h1>
+      <div class="w-full" id="avatars">
+
+        <h2 class=" md:text-xl text-gray-700 px-4 mt-4">
+            Enter your email to <span class="text-gray-900">get an invite</span>.
+          </h2>
+  
+          <!-- <h2 class="md:text-xl text-gray-900 px-4 mt-8" id="wb-bold">
+            Enter your email address
+          </h2> -->
+  
+          <form
+            action="https://gmail.us7.list-manage.com/subscribe/post?u=ba93b717e3e805e7223632ee4&amp;id=20a6053d13"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate px-4 mt-8   "
+            target="_blank"
+            novalidate
+          >
+            <!-- <div class="flex flex-col justify-center items-center md:flex-row">   
+            
+          -->
+          <div id="mc_embed_signup">
+      
+            <!-- <label class="hidden" for="emailaddress">Your Email:</label>
+            <input
+              required
+              placeholder="enter your email"
+              type="email"
+              name="emailaddress"
+              class="py-3 px-6 mt-4 bg-gray-100 border border-black border-4 hover:bg-blue-100 rounded text-black w-full md:w-1/4"
+            /> -->
+            <div class="mc-field-group">
+            <label for="mce-EMAIL" class="hidden">Email Address</label>
+            <input
+              type="email"
+              value=""
+              name="EMAIL"
+              id="mce-EMAIL"
+              class="required email py-3 px-6 mt-4 bg-gray-100 border border-black border-4 hover:bg-blue-100 rounded text-black w-full "
+            />
+  </div>
+  
+            <div id="mce-responses" class="clear">
+              <div
+                class="response"
+                id="mce-error-response"
+                style="display: none"
+              ></div>
+              <div
+                class="response"
+                id="mce-success-response"
+                style="display: none"
+              ></div>
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
+                <input
+                  type="text"
+                  name="b_ba93b717e3e805e7223632ee4_20a6053d13"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
+              <div class="clear">
+                <input
+                  type="submit"
+                  value="Join"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  class="button py-3 px-6 mt-4 bg-red-500 text-white rounded hover:animate-bounce w-full md:w-24 hover:underline hover:bg-red-100 hover:shadow-inner"
+                />
+              </div>
+            <!-- <button
+              type="submit"
+              class="py-3 px-6 mt-4 bg-red-500 text-white rounded hover:animate-bounce w-full md:w-24 hover:underline hover:bg-red-100 hover:shadow-inner"
+            > -->
+              <!-- Join
+            </button> -->
+          </div>
+          </form>
+
+
+
+      </div>
     </main>
 
-    <footer
-      class="fixed bottom-0 m-auto p-3 flex items-center justify-between sm:max-w-md w-full bg-white"
-    >
-      <button class="rounded-full bg-gray-200 py-1.5 px-4 flex items-center">
-        <span class="mt-0.5">✌️</span>
-        <span class="text-red-400 ml-2 text-xs">Leave quietly</span>
-      </button>
 
-      <div class="flex items-center">
-        <button class="p-2 rounded-full bg-gray-200 mr-4">
-          <img src="./assets/plus.svg" alt="" />
-        </button>
-
-        <button class="p-1.5 rounded-full bg-gray-200">
-          <img src="./assets/hand.svg" alt="" />
-        </button>
-      </div>
-    </footer>
-
-    <script>
-      let avatars = document.getElementById("avatars");
-
-      //create 6 avatars
-      for (let ele = 0; ele <= 5; ele++) {
-        let pElement = document.createElement("p");
-        let singleAvatar = document.createElement("img");
-        singleAvatar.src = "./assets/Avatar.png";
-        pElement.appendChild(singleAvatar);
-        avatars.appendChild(pElement);
-      }
-    </script>
+ 
   </body>
 </html>
+
